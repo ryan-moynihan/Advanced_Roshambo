@@ -67,7 +67,7 @@ function updateScore(val) {
 }
 
 function displayGameResult(resultId) {
-    // Define an array of text labels for the choices 0, 1, 2;
+    // Define an array of text labels for the choices 0, 1, 2, 3, 4;
     var choices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
     // Now play the game and store the result
     var result = playGame();
@@ -102,6 +102,6 @@ function storePlayerChoice(choice) {
 
 function storeComputerChoice() {
     // Generate computer's random choice
-    computerChoice = Math.floor(Math.random() * 3);
+    computerChoice = Math.floor(Math.random() * 5);
     console.log("Computer choice = " + computerChoice);
 }
