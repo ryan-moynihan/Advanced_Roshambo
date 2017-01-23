@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet " href="rochambeau.css">
+        <link rel="stylesheet " href="Roshambo.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="Roshambo.js"></script>
@@ -26,7 +26,7 @@
                 <button type="button" class="btn btn-default" onclick="storePlayerChoice(4)">Spock</button>
             </div>
             <p></p>
-            <input type="button" onclick="displayGameResult('result'), displayScoreBoard('wins', 'losses', 'ties')" value="Play" class="btn btn-primary">
+            <input type="button" onclick="displayGameResult('result'), displayScoreBoard('wins', 'losses', 'ties','matchwins','matchlosses')" value="Play" class="btn btn-primary">
             <p></p>
             <div id="result"></div>
             <div id="scoreboard">
@@ -40,6 +40,14 @@
                         <td id="wins">0</td>
                         <td id="losses">0</td>
                         <td id="ties">0</td>
+                    </tr>
+                    <tr>
+                        <td>Match Wins:</td>
+                        <td>Match Losses:</td>
+                    </tr>
+                    <tr>
+                        <td id="matchwins">0</td>
+                        <td id="matchlosses">0</td>
                     </tr>
                 </table>
             </div>
