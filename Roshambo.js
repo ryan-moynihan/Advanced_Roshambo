@@ -19,7 +19,7 @@ function playGame() {
         return 1;
     }
     else if (playerChoice == 1 && computerChoice == 0) {
-        // Rock beats scissors - a win!
+        // Paper beats Rock - a win!
         console.log("win");
         return 1;
     }
@@ -104,4 +104,13 @@ function storeComputerChoice() {
     // Generate computer's random choice
     computerChoice = Math.floor(Math.random() * 5);
     console.log("Computer choice = " + computerChoice);
+}
+
+function match() {
+    if (winsId % 2 == 0) {
+        return "Match Won"
+    }
+    else if (lossesId % 2 == 0) {
+        return "Match Loss"
+    }
 }
